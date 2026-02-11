@@ -33,8 +33,16 @@ body {
   @apply bg-[#20255e];
 }
 
+.primary-color2 {
+  @apply bg-[#FF0055];
+}
+
 .primary-text {
   @apply text-[#20255e];
+}
+
+.primary-text2 {
+  @apply text-[#FF0055];
 }
 
 .ratio {

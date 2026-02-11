@@ -3,6 +3,7 @@ import Navigaton from "./_Component/Navigation/Navigaton";
 import Skill from "./_Component/Skll/Skill";
 import Projects from "./_Component/Projects/Projects";
 import Services from "./_Component/Services/Services";
+import Faq from "./_Component/Faq/Faq";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Skill />
       <Projects />
       <Services />
+      <Faq />
     </main>
   );
 }
