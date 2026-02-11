@@ -4,6 +4,8 @@ import Skill from "./_Component/Skll/Skill";
 import Projects from "./_Component/Projects/Projects";
 import Services from "./_Component/Services/Services";
 import Faq from "./_Component/Faq/Faq";
+import Optical from "./_Component/Optical/Optical";
+import AllProjects from "./_Component/Projects/AllProjects";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Projects />
       <Services />
       <Faq />
+      <Optical />
+      <AllProjects />
     </main>
   );
 }

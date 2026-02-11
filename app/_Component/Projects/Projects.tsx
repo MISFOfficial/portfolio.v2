@@ -13,7 +13,7 @@ export default function Projects() {
     ];
 
     return (
-        <section className="relative min-h-[80vh] py-32 overflow-hidden flex flex-col items-center justify-center text-center">
+        <section className="relative   overflow-hidden flex flex-col items-center justify-center text-center">
 
             {/* Background Typography */}
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none z-0 opacity-20">

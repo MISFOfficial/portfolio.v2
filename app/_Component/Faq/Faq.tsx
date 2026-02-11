@@ -31,7 +31,7 @@ export default function Faq() {
     };
 
     return (
-        <section className="ratio py-20">
+        <section className="ratio">
 
             {/* Header */}
             <div className="text-center  space-y-4 mb-5">

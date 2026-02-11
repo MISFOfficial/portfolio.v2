@@ -5,8 +5,8 @@ import jahin from "@/public/profile.png";
 
 function Services() {
     return (
-        <section className="container mx-auto px-4">
-            <div className="primary-color rounded-[3rem] overflow-hidden relative min-h-[500px] flex items-center justify-between px-6 py-12 lg:px-20 lg:py-16">
+        <section className="ratio">
+            <div className="primary-color rounded-2xl overflow-hidden relative min-h-[500px] flex items-center justify-between px-6 py-12 lg:px-20 lg:py-16">
 
                 {/* Left Side - Image Placeholder (Hidden on small screens if needed, or stacked) */}
                 <div className="hidden lg:flex w-1/2 justify-center items-end relative h-full">
