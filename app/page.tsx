@@ -7,6 +7,7 @@ import Faq from "./_Component/Faq/Faq";
 import Optical from "./_Component/Optical/Optical";
 import AllProjects from "./_Component/Projects/AllProjects";
 import HireMe from "./_Component/HireMe/HireMe";
+import Footer from "./_Component/Footer/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Optical />
       <AllProjects />
       <HireMe />
+      <Footer />
     </main>
   );
 }
