@@ -18,13 +18,15 @@ export default function Home() {
       <div className="ratio  min-h-screen ">
         <Hero />
       </div>
-      <Skill />
-      <Projects />
-      <Services />
-      <Faq />
-      <Optical />
-      <AllProjects />
-      <HireMe />
+      <div className="ratio flex flex-col w-full  gap-30 mb-30">
+        <Skill />
+        <Projects />
+        <Services />
+        <Faq />
+        <Optical />
+        <AllProjects />
+        <HireMe />
+      </div>
       <Footer />
     </main>
   );
