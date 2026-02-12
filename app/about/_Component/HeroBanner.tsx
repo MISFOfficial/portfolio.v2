@@ -79,7 +79,7 @@ export default function HeroBanner({ ref, heroRef, handleMouseMove, parallaxY, p
                         { text: "Next.js", x: "28%", y: "-12%", delay: 0.1 },
                         { text: "React", x: "35%", y: "15%", delay: 0.2 },
                         { text: "Nest", x: "-22%", y: "22%", delay: 0.3 },
-                        { text: "MongoDB", x: "-12%", y: "-30%", delay: 0.4 },
+                        { text: "MongoDB", x: "-18%", y: "-30%", delay: 0.4 },
                         { text: "Express", x: "18%", y: "32%", delay: 0.6 },
                     ].map((card, i) => (
                         <motion.div
