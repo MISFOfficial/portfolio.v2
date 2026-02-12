@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { ArrowLeft, Heart, BookOpen, Code, MapPin, Briefcase, GraduationCap, Coffee, Moon, Zap, Target, Globe, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import HeroBanner from './_Component/HeroBanner';
+import Facts from './_Component/Facts';
+import Journey from './_Component/Journey';
 
 
 export default function AboutPage() {
@@ -41,28 +43,28 @@ export default function AboutPage() {
             title: "Roots in Kishoreganj",
             description: "Born and raised in a small, humble family in Kishoreganj, a peaceful town in the Dhaka division. Growing up in a close-knit community, I was always the curious child, restless and eager to explore the world around me.",
             icon: <MapPin className="primary-text2" size={24} />,
-            image: "/home/jahin/.gemini/antigravity/brain/6267e663-0069-45e5-944f-43f66840c7fa/kishoreganj_landscape_1770898855065.png"
+            image: "/kg.jpg"
         },
         {
             year: "2020",
             title: "A Family's Strength",
             description: "Life took a profound turn in 2020 when we lost my eldest brother in a tragic bike accident. As the family shifted from four brothers to three, I stepped into the role of the eldest son. This moment defined my sense of responsibility and resilience.",
             icon: <Heart className="primary-text2" size={24} />,
-            image: "/home/jahin/.gemini/antigravity/brain/6267e663-0069-45e5-944f-43f66840c7fa/software_engineer_professional_1770898893501.png"
+            image: "/kg.jpg"
         },
         {
             year: "Education",
             title: "Academic Growth",
             description: "Completed my primary education locally, followed by SSC at Azimuddin and HSC at Gurudoyal. Since my high school days, I've felt a magnetic pull toward programming, though resources were scarce at the time.",
             icon: <BookOpen className="primary-text2" size={24} />,
-            image: "/home/jahin/.gemini/antigravity/brain/6267e663-0069-45e5-944f-43f66840c7fa/programming_passion_concept_1770898872621.png"
+            image: "/kg.jpg"
         },
         {
             year: "Present",
             title: "The Engineer's Path",
             description: "I fulfilled my dream by graduating with a Bachelor's in Computer Science and Engineering from Daffodil International University. Today, I am a professional Software Engineer, specializing in system architecture, full-stack development, and meticulous testing.",
             icon: <GraduationCap className="primary-text2" size={24} />,
-            image: "/home/jahin/.gemini/antigravity/brain/6267e663-0069-45e5-944f-43f66840c7fa/software_engineer_professional_1770898893501.png"
+            image: "/kg.jpg"
         }
     ];
 
@@ -87,83 +89,10 @@ export default function AboutPage() {
             />
 
             {/* Quick Facts Grid */}
-            <section className="py-20 bg-black/50 backdrop-blur-sm relative z-10">
-                <div className="ratio grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
-                    {quickFacts.map((fact, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: i * 0.1 }}
-                            className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col items-center text-center group hover:bg-white/10 transition-colors"
-                        >
-                            <div className="primary-text2 mb-4 group-hover:scale-125 transition-transform duration-300">
-                                {fact.icon}
-                            </div>
-                            <span className="text-[10px] uppercase font-black text-gray-500 tracking-widest mb-1">{fact.label}</span>
-                            <span className="text-sm font-bold text-white">{fact.value}</span>
-                        </motion.div>
-                    ))}
-                </div>
-            </section>
+            {/* <Facts quickFacts={quickFacts} /> */}
 
             {/* Journey Timeline with Parallax */}
-            <section className="py-24 bg-black relative z-10">
-                <div className="ratio">
-                    <div className="space-y-48">
-                        {journeyEvents.map((event, index) => (
-                            <div
-                                key={index}
-                                className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-16 md:gap-32`}
-                            >
-                                <motion.div
-                                    className="flex-1 w-full"
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 1 }}
-                                >
-                                    <div className="relative aspect-[16/10] rounded-3xl overflow-hidden group shadow-2xl">
-                                        <Image
-                                            src={event.image}
-                                            alt={event.title}
-                                            fill
-                                            className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
-                                        <div className="absolute bottom-8 left-8">
-                                            <span className="px-4 py-2 rounded-full bg-[#FF0055] text-white text-[10px] font-black uppercase tracking-widest">
-                                                {event.year}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </motion.div>
-
-                                <motion.div
-                                    className="flex-1 space-y-8"
-                                    initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.8 }}
-                                >
-                                    <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none">
-                                        {event.title.split(' ').map((word, i) => (
-                                            <span key={i} className={i === 0 ? 'text-[#20255e]' : ''}>{word} </span>
-                                        ))}
-                                    </h2>
-                                    <p className="text-xl text-gray-400 leading-relaxed font-medium text-justify">
-                                        {event.description}
-                                    </p>
-                                    <div className="flex gap-4">
-                                        <div className="h-[1px] w-20 bg-[#FF0055] mt-4" />
-                                        <div className="p-4 bg-white/5 rounded-2xl border border-white/10 primary-text2">
-                                            {event.icon}
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <Journey journeyEvents={journeyEvents} />
 
             {/* Life Philosophy Section - Bold Unique Design */}
             <section className="py-48 bg-[#20255e]/10 relative overflow-hidden backdrop-blur-3xl border-y border-white/5">
