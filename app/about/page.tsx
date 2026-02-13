@@ -15,6 +15,7 @@ import CTA from './_Component/CTA';
 import Travel from './_Component/Travel';
 import Philosophy from './_Component/Philosophy';
 import Beyond from './_Component/Beyond';
+import VideoResume from '../_Component/VideoResume/VideoResume';
 
 
 export default function AboutPage() {
@@ -85,6 +86,7 @@ export default function AboutPage() {
     return (
         <main ref={containerRef} className="min-h-screen bg-black text-white selection:bg-[#FF0055] selection:text-white overflow-hidden relative">
 
+
             <HeroBanner
                 ref={heroRef}
                 handleMouseMove={handleMouseMove}
@@ -94,6 +96,7 @@ export default function AboutPage() {
                 springX={springX}
                 springY={springY}
             />
+
 
             {/* Quick Facts Grid */}
             {/* <Facts quickFacts={quickFacts} /> */}

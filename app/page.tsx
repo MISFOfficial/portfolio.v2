@@ -8,16 +8,19 @@ import Optical from "./_Component/Optical/Optical";
 import AllProjects from "./_Component/Projects/AllProjects";
 import HireMe from "./_Component/HireMe/HireMe";
 import Footer from "./_Component/Footer/Footer";
+import VideoResume from "./_Component/VideoResume/VideoResume";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="relative">
       <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl ">
         <Navigaton />
       </div>
       <div className="ratio  min-h-screen ">
         <Hero />
       </div>
+
+
       <div className="ratio flex flex-col w-full  gap-30 mb-30">
         <Skill />
         <Projects />
