@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "page:build": "npx @cloudflare/next-on-pages"
+    "pages:build": "npm run build"
   },
   "dependencies": {
     "framer-motion": "^12.33.0",
