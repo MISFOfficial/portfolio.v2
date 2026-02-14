@@ -312,7 +312,7 @@ export const projectsData: Project[] = [
             solution: "Created a searchable 'Knowledge Vault' where tips are categorized by climate zone and plant types.",
         },
         metrics: [
-            { label: "Articles", value: "500+", description: "Curation List" },
+            { label: "Articles", value: "100+", description: "Curation List" },
             { label: "Community", value: "2k+", description: "Gardeners" },
             { label: "Search", value: "< 1s", description: "Index Speed" },
         ],
