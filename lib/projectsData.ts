@@ -1,21 +1,25 @@
 export const projectsData = [
     {
         id: "40",
-        title: "Demo 40",
-        slug: "demo-40",
-        image: "/image.png",
-        tags: ["Fashion Designer", "Architecture", "Actor"],
+        title: "Minthost",
+        slug: "minthost.com.bd",
+        image: "https://i.ibb.co.com/p6ZkhwLJ/image.png",
+        tags: ["Hosting", "VPS", "Domain"],
         badge: null,
-        description: "A comprehensive portfolio website for fashion designers and architects.",
-        fullDescription: "This project showcases a modern portfolio design tailored for creative professionals. It features a clean, minimalist interface with smooth animations and responsive layouts that work seamlessly across all devices.",
-        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        liveUrl: "https://example.com",
+        description: "A Hosing & VPS Provider Company",
+        fullDescription: "This project is a modern Hosing & VPS Provider Company website. It features a clean, minimalist interface with smooth animations and responsive layouts that work seamlessly across all devices.",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Axios", "Tanstack Query", "Custom Authentication", "Express.js", "MongoDB", "SSLCommerz Payment Gateway", "Mongoose", "JWT", "Bcrypt js", "Prettier", "Cloudflare", "Docker",],
+        liveUrl: "https://minthost.com.bd",
         githubUrl: "https://github.com/example",
         features: [
-            "Responsive design",
-            "Smooth animations",
-            "SEO optimized",
-            "Fast performance"
+            "Secure Payment",
+            "Secure Authentication",
+            "Password Hashing",
+            "JWT",
+            "Secure Database",
+            "User Can Buy VPS & Hosting",
+            "User Can Buy Domain",
+            "User Can Tranfer Domain"
         ]
     },
     {

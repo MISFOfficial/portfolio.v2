@@ -15,13 +15,11 @@ export default function Home() {
   return (
     <main className="relative">
       <div className="sticky top-0 w-full z-50 backdrop-blur-xl ">
-
         <Navigaton />
       </div>
       <div className="ratio  min-h-screen ">
         <Hero />
       </div>
-
 
       <div className="ratio flex flex-col w-full  gap-30 mb-30">
         <Skill />
@@ -37,4 +35,3 @@ export default function Home() {
     </main>
   );
 }
-
