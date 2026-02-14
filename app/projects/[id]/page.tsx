@@ -1,5 +1,7 @@
 "use client";
 
+export const runtime = "edge";
+
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
 import { projectsData, Project } from "@/lib/projectsData";
