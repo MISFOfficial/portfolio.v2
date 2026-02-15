@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Upload, Send, Loader2, CheckCircle2 } from 'lucide-react';
 import { sendInquiry } from '@/app/_actions/sendInquiry';
 
-interface ProjectModalProps {
+interface ContactModalProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
+export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [error, setError] = useState('');
@@ -66,7 +66,7 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+                <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
                     {/* Backdrop */}
                     <motion.div
                         initial={{ opacity: 0 }}
