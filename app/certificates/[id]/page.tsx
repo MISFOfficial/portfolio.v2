@@ -10,6 +10,8 @@ import { getCertificateBySlug } from "@/lib/certificatesData";
 import Navigaton from "@/app/_Component/Navigation/Navigaton";
 import Footer from "@/app/_Component/Footer/Footer";
 
+export const runtime = 'edge';
+
 export default function CertificateDetail() {
     const { id } = useParams();
     const router = useRouter();
