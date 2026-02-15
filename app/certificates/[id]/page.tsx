@@ -1,5 +1,8 @@
 "use client";
 
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, Star, Award, CheckCircle2, AlertCircle, Copy, Share2, Shield, Zap, ShieldCheck, X, Maximize2 } from "lucide-react";
@@ -9,8 +12,6 @@ import { useParams, useRouter } from "next/navigation";
 import { getCertificateBySlug } from "@/lib/certificatesData";
 import Navigaton from "@/app/_Component/Navigation/Navigaton";
 import Footer from "@/app/_Component/Footer/Footer";
-
-export const runtime = 'edge';
 
 export default function CertificateDetail() {
     const { id } = useParams();
