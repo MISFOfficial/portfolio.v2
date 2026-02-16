@@ -27,8 +27,8 @@ export default function Home() {
         <EngineeringMindset />
         <Projects />
         <AllProjects />
-        <Certificates />
-        <AllCertificates />
+        {/* <Certificates />
+        <AllCertificates /> */}
         <Services />
         <Optical />
         <Faq />
