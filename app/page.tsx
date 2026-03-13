@@ -9,6 +9,7 @@ import Optical from "./_Component/Optical/Optical";
 import AllProjects from "./_Component/Projects/AllProjects";
 import HireMe from "./_Component/HireMe/HireMe";
 import Footer from "./_Component/Footer/Footer";
+import Experiance from "./_Component/Experiance/Experiance";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <div className="ratio flex flex-col w-full  gap-30 mb-30">
         <Skill />
         <EngineeringMindset />
+        <Experiance />
         <Projects />
         <AllProjects />
 
